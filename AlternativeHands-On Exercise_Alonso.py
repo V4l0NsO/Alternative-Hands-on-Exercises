@@ -25,3 +25,26 @@ print("Age:",person1.get_age())
 
 #Reflection: Its better to access __age through get_age because it is a private attribute
 #and should not be accessed directly, it is also easier.
+
+#Exercise 3: Apply Inheritance
+class Person:
+    def __init__(self, name, __age):
+        self.name = name
+        self.__age = __age
+
+    def get_age(self):
+        return self.__age
+    
+class Student(Person):
+    def __init__(self, name, __age):
+        super().__init__(name, __age)
+
+    def study(self):
+        print(f"{self.name} is studying.")
+
+
+person1 = Person("Fleinchryunsmarlwinflopoerty", 26)
+
+print("Name:",person1.name)
+print("Age:",person1.get_age())
+print(person1.name, Student(person1.name, person1.get_age()).study())
