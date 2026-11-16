@@ -6,5 +6,5 @@ class Person:
 
 person1 = Person("Fleinchryunsmarlwinflopoerty", 26)
 
-print(person1.name)
-print(person1.age)
+print("Name:",person1.name)
+print("Age:",person1.age)
