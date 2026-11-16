@@ -1,4 +1,4 @@
-#Exercise 1 - creating a class
+#Exercise 1: creating a class
 class Person:
     def __init__(self, name, age):
         self.name = name
@@ -9,7 +9,7 @@ person1 = Person("Fleinchryunsmarlwinflopoerty", 26)
 print("Name:",person1.name)
 print("Age:",person1.age)
 
-#Exercise 2 - Apply Encapsulation
+#Exercise 2: Apply Encapsulation
 class Person:
     def __init__(self, name, __age):
         self.name = name
