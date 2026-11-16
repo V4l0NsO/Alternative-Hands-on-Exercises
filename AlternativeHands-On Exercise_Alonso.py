@@ -1,4 +1,4 @@
-#Exercise 1
+#Exercise 1 - creating a class
 class Person:
     def __init__(self, name, age):
         self.name = name
